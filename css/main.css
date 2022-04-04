@@ -1,11 +1,20 @@
 html {
   box-sizing: border-box;
   line-height: 1.5;
-  font-family: "Karma", serif;
+  font-family: Karma, serif;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
+}
+
+main {
+  padding: 1rem;
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }
 
 ol {
@@ -23,26 +32,30 @@ ol {
   list-style: none;
   border: 3px solid #987ffa;
   border-radius: 6px;
-  margin: 0;
   padding: 1rem;
 }
 
 h2 {
-  font-family: "Oswald", sans-serif;
+  font-family: Oswald, sans-serif;
   color: #6f00e7;
+  font-weight: bold;
   font-size: 2rem;
   text-align: center;
+  margin: 0;
+  padding-top: 1.5rem;
 }
 
 p {
   color: #000;
   text-align: center;
   font-size: 1.4rem;
+  margin: 0;
+  padding-bottom: 1.25rem;
 }
 
 .cart {
   background-color: #6f00e7;
-  font-family: "Oswald", sans-serif;
+  font-family: Oswald, sans-serif;
   border-radius: 3em;
   margin: 0 auto 0 0;
   padding: .5em 1.5em .7em;
@@ -50,10 +63,25 @@ p {
   align-items: center;
 }
 
+.cart, .fav, .share {
+  display: inline-block;
+}
+
 ul li {
   list-style: none;
 }
 
 ul li span {
-    color: white;
+  color: white;
+  font-weight: bold;
+}
+
+.products > img {
+  max-width: 15em;
+  margin: auto;
+}
+
+span {
+  display: flex;
+  align-items: center;
 }
