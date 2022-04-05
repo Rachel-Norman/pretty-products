@@ -57,14 +57,19 @@ p {
   background-color: #6f00e7;
   font-family: Oswald, sans-serif;
   border-radius: 3em;
-  margin: 0 auto 0 0;
+  margin: 0;
   padding: .5em 1.5em .7em;
   display: flex;
   align-items: center;
 }
 
 .cart, .fav, .share {
-  display: inline-block;
+  display: inline;
+}
+
+.fav, .share {
+  float: right;
+  margin: 0 .25rem;
 }
 
 ul li {
@@ -82,6 +87,6 @@ ul li span {
 }
 
 span {
-  display: flex;
+  display: inline;
   align-items: center;
 }
