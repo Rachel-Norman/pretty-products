@@ -59,12 +59,11 @@ p {
   border-radius: 3em;
   margin: 0;
   padding: .5em 1.5em .7em;
-  display: flex;
   align-items: center;
 }
 
 .cart, .fav, .share {
-  display: inline;
+  display: inline-block;
 }
 
 .fav, .share {
@@ -88,5 +87,5 @@ ul li span {
 
 span {
   display: inline;
-  align-items: center;
+  text-align: center;
 }
